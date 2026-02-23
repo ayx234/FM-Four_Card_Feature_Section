@@ -1,0 +1,105 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Four card feature section</title>
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="./styles/reset.css" />
+		<link rel="stylesheet" href="./styles/styles.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- No outer <header> or <h1> becuase this looks like a section,
+         not a full page or a header  -->
+			<main class="main">
+				<section class="features">
+					<header class="features-header">
+						<p class="service-promise h2 h2-light">
+							Reliable, efficient delivery
+						</p>
+						<h2 class="h2">Powered by Technology</h2>
+
+						<p class="service-intro">
+							Our Artificial Intelligence powered tools use
+							millions of project data points to ensure that your
+							project is successful
+						</p>
+					</header>
+					<div class="feature-cards">
+						<div class="card" data-state="cyan">
+							<h3 class="h3">Supervisor</h3>
+							<p>
+								Monitors activity to identify project roadblocks
+							</p>
+							<img
+								class="card-icon"
+								src="./images/icon-supervisor.svg"
+								alt="supervisor icon"
+							/>
+						</div>
+						<div class="card" data-state="red">
+							<h3 class="h3">Team Builder</h3>
+							<p>
+								Scans our talent network to create the optimal
+								team for your project
+							</p>
+							<img
+								class="card-icon"
+								src="./images/icon-team-builder.svg"
+								alt="team builder icon"
+							/>
+						</div>
+						<div class="card" data-state="orange">
+							<h3 class="h3">Karma</h3>
+							<p>
+								Regularly evaluates our talent to ensure quality
+							</p>
+							<img
+								class="card-icon"
+								src="./images/icon-karma.svg"
+								alt="karma icon"
+							/>
+						</div>
+						<div class="card" data-state="blue">
+							<h3 class="h3">Calculator</h3>
+							<p>
+								Uses data from past projects to provide better
+								delivery estimates
+							</p>
+							<img
+								class="card-icon"
+								src="./images/icon-calculator.svg"
+								alt="calculator icon"
+							/>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer>
+				<p class="attribution">
+					Challenge by
+					<a
+						href="https://www.frontendmentor.io?ref=challenge"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Frontend Mentor</a
+					>. Coded by
+					<a href="https://github.com/ayx234">Ali Al Yahya</a>.
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>
