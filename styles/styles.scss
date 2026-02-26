@@ -17,10 +17,10 @@
 	--fw600: 600;
 
 	/* font-sizes */
-	--fs-body: 0.9375rem; 
+	--fs-body: 0.9375rem;
 	--fs-h2: clamp(1.5rem, 1.2183rem + 1.2019vw, 2.3rem);
-	--fs-h3: 1.3rem; 
-	--fs-smaller: 0.8125rem; 
+	--fs-h3: 1.3rem;
+	--fs-smaller: 0.8125rem;
 
 	/* colors */
 
@@ -73,16 +73,17 @@ p {
 /* ----- Compoenents [blocks, exceptions] */
 .wrapper {
 	margin-inline: auto;
-	padding-inline: var(--spacing-xxl);
 	padding-inline: clamp(2.0625rem, -0.7324rem + 11.9249vw, 10rem);
-	padding-block: var(--spacing-3xl);
-	padding-block: clamp(2.2rem, 0.1137rem + 8.9014vw, 8.125rem);
+	padding-block: clamp(2.2rem, 0.1137rem + 8.9014vw, 6rem);
 }
 
 /* --- Features --- */
 
 /* --- Header --- */
 .features-header {
+	text-align: center;
+	max-width: 32rem;
+	margin-inline: auto;
 	text-align: center;
 }
 
@@ -108,8 +109,8 @@ p {
 			"supervisor  teambuilder calculator"
 			"supervisor  karma calculator"
 			".  karma .";
-		}
 	}
+}
 
 .card {
 	background-color: var(--white);
@@ -121,12 +122,12 @@ p {
 	box-shadow: 0 0.375em 1em -0.1875em;
 	/* Subtle lift + perspective rotation on interaction */
 	transition-property: transform;
-	transition-duration: .25s;
+	transition-duration: 0.25s;
 }
 
 .card:is(:hover, :focus) {
 	/* Scale 18%, lift 0.5em, add 3D rotation for depth */
-	transform: scale(118%) translate3d(0em, -.5em, 1em) rotateX(-5deg);
+	transform: scale(118%) translate3d(0em, -0.5em, 1em) rotateX(-5deg);
 }
 
 .card[data-state="cyan"] {
@@ -200,7 +201,7 @@ footer {
 
 .attribution {
 	font-size: clamp(0.6875rem, 0.5775rem + 0.4695vw, 1rem);
-	margin-block-start: clamp(0.8125rem, -0.1338rem + 4.0376vw, 3.5rem);
+	margin-block-start: clamp(0.8125rem, -0.1338rem + 4.0376vw, 2.5rem);
 	text-align: center;
 	position: absolute;
 	left: 50%;

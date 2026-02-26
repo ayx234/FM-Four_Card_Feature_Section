@@ -12,6 +12,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Set up](#set-up)
   - [What I learned](#what-i-learned)
     - [HTML](#leanred--html)
     - [CSS](#learned--css)
@@ -48,6 +49,23 @@ Users should be able to:
 - CSS custom properties
 - CSS Grid
 - Mobile-first workflow
+- SASS
+
+### Set up
+
+I used SASS as a preprocessor for my CSS.
+
+SASS set up:
+- Added the SASS compiler locally to the project using npm
+- Compiled SASS into CSS on file save using npx
+
+```bash
+npm install sass --save-dev
+
+npx sass --watch <path-to-scss-file> <path-to-compiled-css-file>
+```
+
+
 
 ### What I learned
 

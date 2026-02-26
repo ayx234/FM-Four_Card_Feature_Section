@@ -60,15 +60,16 @@ p {
 /* ----- Compoenents [blocks, exceptions] */
 .wrapper {
   margin-inline: auto;
-  padding-inline: var(--spacing-xxl);
   padding-inline: clamp(2.0625rem, -0.7324rem + 11.9249vw, 10rem);
-  padding-block: var(--spacing-3xl);
-  padding-block: clamp(2.2rem, 0.1137rem + 8.9014vw, 8.125rem);
+  padding-block: clamp(2.2rem, 0.1137rem + 8.9014vw, 6rem);
 }
 
 /* --- Features --- */
 /* --- Header --- */
 .features-header {
+  text-align: center;
+  max-width: 32rem;
+  margin-inline: auto;
   text-align: center;
 }
 
@@ -178,7 +179,7 @@ footer {
 
 .attribution {
   font-size: clamp(0.6875rem, 0.5775rem + 0.4695vw, 1rem);
-  margin-block-start: clamp(0.8125rem, -0.1338rem + 4.0376vw, 3.5rem);
+  margin-block-start: clamp(0.8125rem, -0.1338rem + 4.0376vw, 2.5rem);
   text-align: center;
   position: absolute;
   left: 50%;
