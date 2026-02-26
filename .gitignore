@@ -40,7 +40,5 @@ npm-debug.log*
 Thumbs.db
 
 # Project helpers
-AGENTS.md
-CLAUDE.md
 README-template.md
 README-project.md

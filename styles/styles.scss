@@ -17,10 +17,10 @@
 	--fw600: 600;
 
 	/* font-sizes */
-	--fs-body: 0.9375rem; /*15px*/
+	--fs-body: 0.9375rem; 
 	--fs-h2: clamp(1.5rem, 1.2183rem + 1.2019vw, 2.3rem);
-	--fs-h3: 1.3rem; /*20.8px*/
-	--fs-smaller: 0.8125rem; /*13px*/
+	--fs-h3: 1.3rem; 
+	--fs-smaller: 0.8125rem; 
 
 	/* colors */
 
@@ -53,19 +53,18 @@
 		--fs-body: clamp(0.85rem, -1.1932rem + 9.0909vw, 0.9375rem);
 		--fs-h2: clamp(1.25rem, 0.036rem + 5.8182vw, 1.5rem);
 		--fs-h3: clamp(1.125rem, 0.3977rem + 3.6364vw, 1.25rem);
-		--fs-smaller: 0.8125rem; /*13px*/
-		--fs-smaller: clamp(0.75rem, 0.3864rem + 1.8182vw, 0.8125rem) /*13px*/;
+		--fs-smaller: clamp(0.75rem, 0.3864rem + 1.8182vw, 0.8125rem);
 	}
 }
 
 /* ----- General styles [elements] ----- */
 
 body {
-	font-family: poppins, sans-serif;
-	font-size: var(--fs-body);
 	background-color: var(--bg-color);
 	max-width: 1440px;
 	margin-inline: auto;
+	font-family: poppins, sans-serif;
+	font-size: var(--fs-body);
 }
 
 p {
@@ -97,8 +96,7 @@ p {
 	display: grid;
 	gap: var(--spacing-xxl);
 	grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
-	/* testing autosave */
-	/* testing autosave */
+	perspective: 800px;
 }
 
 @media (min-width: 1000px) {
@@ -110,47 +108,37 @@ p {
 			"supervisor  teambuilder calculator"
 			"supervisor  karma calculator"
 			".  karma .";
+		}
 	}
-}
 
 .card {
-	padding: var(--spacing-xxl);
 	background-color: var(--white);
+	padding: var(--spacing-xxl);
 	border-radius: var(--border-radius);
 	border-style: solid;
 	border-width: 0.33em 0 0 0;
 	display: grid;
 	box-shadow: 0 0.375em 1em -0.1875em;
+	/* Subtle lift + perspective rotation on interaction */
+	transition-property: transform;
+	transition-duration: .25s;
+}
+
+.card:is(:hover, :focus) {
+	/* Scale 18%, lift 0.5em, add 3D rotation for depth */
+	transform: scale(118%) translate3d(0em, -.5em, 1em) rotateX(-5deg);
 }
 
 .card[data-state="cyan"] {
 	border-color: var(--cyan);
 }
 
-@media (min-width: 1000px) {
-	.card[data-state="cyan"] {
-		grid-area: supervisor;
-	}
-}
-
 .card[data-state="red"] {
 	border-color: var(--red);
 }
 
-@media (min-width: 1000px) {
-	.card[data-state="red"] {
-		grid-area: teambuilder;
-	}
-}
-
 .card[data-state="orange"] {
 	border-color: var(--orange);
-}
-
-@media (min-width: 1000px) {
-	.card[data-state="orange"] {
-		grid-area: karma;
-	}
 }
 
 .card[data-state="blue"] {
@@ -158,6 +146,15 @@ p {
 }
 
 @media (min-width: 1000px) {
+	.card[data-state="cyan"] {
+		grid-area: supervisor;
+	}
+	.card[data-state="red"] {
+		grid-area: teambuilder;
+	}
+	.card[data-state="orange"] {
+		grid-area: karma;
+	}
 	.card[data-state="blue"] {
 		grid-area: calculator;
 	}

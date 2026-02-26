@@ -15,20 +15,26 @@
 		/>
 
 		<title>Frontend Mentor | Four card feature section</title>
+
 		<!-- Stylesheets -->
+
 		<link rel="stylesheet" href="./styles/reset.css" />
 		<link rel="stylesheet" href="./styles/styles.css" />
 	</head>
+
 	<body>
 		<div class="wrapper">
 			<!-- No outer <header> or <h1> becuase this looks like a section,
          not a full page or a header  -->
+
 			<main class="main">
 				<section class="features">
+					<!-- Features Header -->
 					<header class="features-header">
 						<p class="service-promise h2 h2-light">
 							Reliable, efficient delivery
 						</p>
+
 						<h2 class="h2">Powered by Technology</h2>
 
 						<p class="service-intro">
@@ -37,20 +43,25 @@
 							project is successful
 						</p>
 					</header>
+
+					<!-- Feature Cards -->
 					<div class="feature-cards">
-						<div class="card" data-state="cyan">
+						<div class="card" tabindex="0" data-state="cyan">
 							<h3 class="h3">Supervisor</h3>
+
 							<p>
 								Monitors activity to identify project roadblocks
 							</p>
 							<img
 								class="card-icon"
 								src="./images/icon-supervisor.svg"
-								alt="supervisor icon"
+								alt=""
+								aria-hidden="true"
 							/>
 						</div>
-						<div class="card" data-state="red">
+						<div class="card" tabindex="0" data-state="red">
 							<h3 class="h3">Team Builder</h3>
+
 							<p>
 								Scans our talent network to create the optimal
 								team for your project
@@ -58,10 +69,11 @@
 							<img
 								class="card-icon"
 								src="./images/icon-team-builder.svg"
-								alt="team builder icon"
+								alt=""
+								aria-hidden="true"
 							/>
 						</div>
-						<div class="card" data-state="orange">
+						<div class="card" tabindex="0" data-state="orange">
 							<h3 class="h3">Karma</h3>
 							<p>
 								Regularly evaluates our talent to ensure quality
@@ -69,11 +81,12 @@
 							<img
 								class="card-icon"
 								src="./images/icon-karma.svg"
-								alt="karma icon"
+								alt=""
+								aria-hidden="true"
 							/>
 						</div>
-						<div class="card" data-state="blue">
-							<h3 class="h3">Calculator</h3>
+						<div class="card" tabindex="0" data-state="blue">
+							<h2 class="h3">Calculator</h2>
 							<p>
 								Uses data from past projects to provide better
 								delivery estimates
@@ -81,13 +94,15 @@
 							<img
 								class="card-icon"
 								src="./images/icon-calculator.svg"
-								alt="calculator icon"
+								alt=""
+								aria-hidden="true"
 							/>
 						</div>
 					</div>
 				</section>
 			</main>
 
+			<!-- Footer -->
 			<footer>
 				<p class="attribution">
 					Challenge by
